@@ -15,11 +15,11 @@ public:
 	~Terminal();
 
 private:
-	const char* DefColor = "\033[37m";
-	const char* TitleColor = "\033[32m";
-	const char* QuestionColor = "\033[34m";
-	const char* GoodAnswearColor = "\033[32m";
-	const char* BadAnswearColor = "\033[31m";
-	const char* WarningColor = "\033[33m";
+	const char* DefColor = "";
+	const char* TitleColor = "";
+	const char* QuestionColor = "";
+	const char* GoodAnswearColor = "";
+	const char* BadAnswearColor = "";
+	const char* WarningColor = "";
 };
 
