@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
 
-class Terminal
+class Renderer
 {
 public:
-	Terminal();
+	Renderer();
 	void PrintTitle(const char* Title);
 	void PrintDef(const char* Text);
 	void PrintQuestion(const char* Text);
@@ -12,7 +12,7 @@ public:
 	void BadAnswear(const char* Text);
 	void Warning(const char* Text);
 	std::string GetInput();
-	~Terminal();
+	~Renderer();
 
 private:
 	const char* DefColor = "";

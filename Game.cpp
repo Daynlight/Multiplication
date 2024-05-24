@@ -9,6 +9,7 @@ void Game::Loop(int Level)
 	std::string Answear = "";
 	Console.Warning("To Exit Just Type 'Exit'");
 	while (Answear != "Exit") {
+
 		int A = Random(Level);
 		int B = Random(Level);
 		int AnswearInt = 0;
@@ -29,7 +30,12 @@ void Game::Loop(int Level)
 				AnswearInt = std::stoi(Answear);
 
 				if(AnswearInt != (A * B)) Console.BadAnswear("This is bad Answear Try Again");
-				else Console.GoodAnswear("This is Good Answear");
+				else {
+					Console.GoodAnswear("This is Good Answear");
+					Sleep(500);
+					system("cls");
+					Console.Warning("To Exit Just Type 'Exit'");
+				}
 			}
 			catch (std::string TryAnswear)
 			{

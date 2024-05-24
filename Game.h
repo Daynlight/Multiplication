@@ -1,7 +1,8 @@
 #pragma once
-#include "Terminal.h"
+#include "Renderer.h"
 #include <string>
 #include <random>
+#include <Windows.h>
 
 class Game
 {
@@ -11,7 +12,7 @@ public:
 	~Game();
 
 private:
-	Terminal Console = Terminal();
+	Renderer Console = Renderer();
 	int Random(int Level);
 };
 

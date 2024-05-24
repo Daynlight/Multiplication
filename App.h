@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "Terminal.h"
+#include "Renderer.h"
 #include "Game.h"
 
 class App
@@ -12,7 +12,7 @@ public:
 private:
 	int Level = 1;
 
-	Terminal Console = Terminal();
+	Renderer Console = Renderer();
 	Game AppGame = Game();
 };
 
