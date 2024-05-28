@@ -1,5 +1,6 @@
 #pragma once
 #include "Renderer.h"
+#include "Stats.h"
 #include <string>
 #include <random>
 #include <Windows.h>

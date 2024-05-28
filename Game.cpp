@@ -6,6 +6,8 @@ Game::Game()
 
 void Game::Loop(int Level)
 {
+	Stats Statistics = Stats();
+
 	std::string Answear = "";
 	Console.Warning("To Exit Just Type 'Exit'");
 	while (Answear != "Exit") {
@@ -31,6 +33,7 @@ void Game::Loop(int Level)
 
 				if(AnswearInt != (A * B)) Console.BadAnswear("This is bad Answear Try Again");
 				else {
+					Statistics.AddCorrectAnswear();
 					Console.GoodAnswear("This is Good Answear");
 					Sleep(500);
 					system("cls");
